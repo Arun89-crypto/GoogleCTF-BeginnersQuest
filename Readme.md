@@ -150,3 +150,24 @@ print(encodeSecret(data))
 **ANS : CTF{n3v3r_3ver_ev3r_use_r4nd0m}**
 
 
+### Task 8 : HIDE & SEEK (MISC)
+
+Open the image in hexedit and strings in terminal for more analysis we can use : https://hexed.it 
+It is an online image analysing tool 
+
+Now after analysing we found some strings such as 
+- IDAT
+- eDIH
+- IEND
+
+Now we can find all the headers on web except : eDIH
+Now after smashing my head I found this -> Reverse(eDIH) = HIDe
+
+So the image is hiding something and we need to find it
+
+Now we will open the file using python code ->
+
+```python
+
+```
+
